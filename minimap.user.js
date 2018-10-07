@@ -6,18 +6,18 @@
 // @author       Some Anon
 // @match        https://pixelcanvas.io/*
 // @match        http://pixelcanvas.io/*
-// @homepage     https://github.com/srdwly/nilesr
-// @updateURL    https://raw.githubusercontent.com/srdwly/nilesr/master/minimap.user.js
-// @downloadURL  https://raw.githubusercontent.com/srdwly/nilesr/master/minimap.user.js
+// @homepage     https://github.com/nilesr/llpixel
+// @updateURL    https://raw.githubusercontent.com/nilesr/llpixel/master/minimap.user.js
+// @downloadURL  https://raw.githubusercontent.com/nilesr/llpixel/master/minimap.user.js
 // @grant        none
 // ==/UserScript==
 
 //ref:https://stackoverflow.com/questions/4604663/download-single-files-from-github
 //github raw file url  template
 //https://raw.githubusercontent.com/user/repository/branch/filename
-//https://raw.githubusercontent.com/srdwly/nilesr/master/README.md
+//https://raw.githubusercontent.com/srdwly/llpixel/master/README.md
 
-window.baseTepmlateUrl = 'https://raw.githubusercontent.com/srdwly/nilesr/master';
+window.baseTepmlateUrl = 'https://raw.githubusercontent.com/nilesr/llpixel/master';
 
 cssStyle = `
 #minimapbg {
