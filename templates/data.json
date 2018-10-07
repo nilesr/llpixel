@@ -334,8 +334,14 @@
     "y": 3500,
     "width": 500,
     "height": 585
+  },
+  "chiruno.png": {
+    "name": "chiruno.png",
+    "x": -15000,
+    "y": 3000,
+    "width": 250,
+    "height": 143
   }
-  
   
   
 }
