@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         LLpixel Minimap
 // @namespace    LLpixel
-// @version      3.2
+// @version      3.2.1
 // @description  Pixelcanvas Minimap for LL Templates
 // @author       Some Anon
 // @match        https://pixelcanvas.io/*
