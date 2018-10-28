@@ -397,6 +397,7 @@ function loadTemplates(){
 function loadImage(imagename){
   console.log("    Load image " + imagename);
   image_list[imagename] = new Image();
+    image_list[imagename].setAttribute('crossOrigin', '');
   if(cachebreaker != null)
     image_list[imagename].src = window.baseTepmlateUrl + "/images/" + template_list[imagename].name;
   else
@@ -422,6 +423,11 @@ function drawTemplates(){
     var newheight = zoomlevel * image_list[template].height;
     var img = image_list[template];
     ctx_minimap.drawImage(img, xoff, yoff, newwidth, newheight);
+      var data = document.getElementById("minimap").getContext("2d").getImageData(210, 150, 1, 1).data;
+      var x = "rgb(" + data[0] + ", " + data[1] + ", " + data[2] + ")";
+      Array.prototype.slice.call(document.getElementById("colors").children, 0).forEach(function(e) {
+          if (e.style.backgroundColor == x) e.click();
+      });
   }
 }
 
