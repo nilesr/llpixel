@@ -129,6 +129,8 @@ htmlFragment = `
   </div>
 </div>`;
 
+var lastColor = "";
+
 window.addEventListener('load', function() {
   // Regular Expression to get coordinates out of URL
   re = /(.*)@(.*),(.*)/g;
@@ -426,7 +428,11 @@ function drawTemplates(){
       var data = document.getElementById("minimap").getContext("2d").getImageData(210, 150, 1, 1).data;
       var x = "rgb(" + data[0] + ", " + data[1] + ", " + data[2] + ")";
       Array.prototype.slice.call(document.getElementById("colors").children, 0).forEach(function(e) {
-          if (e.style.backgroundColor == x) e.click();
+          if (e.style.backgroundColor == x && x != lastColor) 
+          {
+            e.click();
+            lastColor = x;
+          }
       });
   }
 }
